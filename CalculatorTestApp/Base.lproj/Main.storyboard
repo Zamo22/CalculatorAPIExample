@@ -201,6 +201,21 @@
                                 <rect key="frame" x="188.5" y="169" width="37" height="37"/>
                                 <color key="color" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u80-W0-BSK">
+                                <rect key="frame" x="40" y="624" width="76" height="51"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="Ha7-1D-mYX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="CE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQI-07-84C"/>
+                                    <action selector="clearHistoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4kX-8Q-67q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -210,6 +225,7 @@
                             <constraint firstItem="Tws-ZO-pac" firstAttribute="firstBaseline" secondItem="bnB-s7-fUN" secondAttribute="firstBaseline" id="83J-Xh-ibb"/>
                             <constraint firstItem="EA2-iB-Gy7" firstAttribute="leading" secondItem="hFR-gH-7XR" secondAttribute="trailing" constant="53" id="9bM-nP-HJR"/>
                             <constraint firstItem="hFR-gH-7XR" firstAttribute="top" secondItem="RNK-3T-kJN" secondAttribute="bottom" constant="90" id="BP6-1q-6qz"/>
+                            <constraint firstItem="u80-W0-BSK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="DOm-6m-HxI"/>
                             <constraint firstItem="JJC-o0-Vd5" firstAttribute="top" secondItem="weX-gi-Tjx" secondAttribute="bottom" constant="49" id="GMA-Ae-wIw"/>
                             <constraint firstItem="dNs-dt-36p" firstAttribute="firstBaseline" secondItem="5wa-az-ACo" secondAttribute="firstBaseline" id="HWQ-EL-Yql"/>
                             <constraint firstItem="0Wa-8Z-ocs" firstAttribute="leading" secondItem="73V-Y1-7wt" secondAttribute="trailing" constant="56" id="JRx-0d-hlv"/>
@@ -229,6 +245,7 @@
                             <constraint firstItem="Tws-ZO-pac" firstAttribute="leading" secondItem="JJC-o0-Vd5" secondAttribute="trailing" constant="53" id="l9V-2c-spd"/>
                             <constraint firstItem="5wa-az-ACo" firstAttribute="firstBaseline" secondItem="weX-gi-Tjx" secondAttribute="firstBaseline" id="lXN-fe-631"/>
                             <constraint firstItem="73V-Y1-7wt" firstAttribute="firstBaseline" secondItem="iv3-5j-VTh" secondAttribute="firstBaseline" id="mRz-hD-y8P"/>
+                            <constraint firstItem="u80-W0-BSK" firstAttribute="top" secondItem="iv3-5j-VTh" secondAttribute="bottom" constant="49" id="o1u-Tm-WMk"/>
                             <constraint firstItem="0Wa-8Z-ocs" firstAttribute="firstBaseline" secondItem="73V-Y1-7wt" secondAttribute="firstBaseline" id="oBp-C0-hbG"/>
                             <constraint firstItem="iv3-5j-VTh" firstAttribute="top" secondItem="JJC-o0-Vd5" secondAttribute="bottom" constant="49" id="oWj-R6-7TJ"/>
                             <constraint firstItem="Dnz-sY-90u" firstAttribute="firstBaseline" secondItem="EA2-iB-Gy7" secondAttribute="firstBaseline" id="yDT-zK-vWo"/>

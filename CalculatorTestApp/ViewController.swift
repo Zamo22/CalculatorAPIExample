@@ -18,7 +18,6 @@ class ViewController: UIViewController, AdditionCalculatorViewController {
     var viewModel: AddViewModel?
     private var firstNumber = 0
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +51,11 @@ class ViewController: UIViewController, AdditionCalculatorViewController {
 
     func displayError(error: Error) {
         print(error)
+    }
+
+    @IBAction func clearHistoryButton(_ sender: UIButton) {
+        firstNumber = 0
+        screenLabel.text = "0"
     }
 }
 
