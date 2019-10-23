@@ -10,6 +10,7 @@ import UIKit
 
 protocol AdditionCalculatorViewController {
     func updateResult(result: String)
+    func displayError(error: Error)
 }
 
 class ViewController: UIViewController, AdditionCalculatorViewController {
@@ -47,6 +48,10 @@ class ViewController: UIViewController, AdditionCalculatorViewController {
 
     @IBAction func numberButtonTapped(_ sender: UIButton) {
         screenLabel.text?.append("\(sender.tag)")
+    }
+
+    func displayError(error: Error) {
+        print(error)
     }
 }
 

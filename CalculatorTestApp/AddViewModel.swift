@@ -25,7 +25,7 @@ class AddViewModel {
             case .success(let total):
                 self?.additionView.updateResult(result: "\(total)")
             case .failure(let error):
-                print(error)
+                self?.additionView.displayError(error: error)
             }
         }
     }
